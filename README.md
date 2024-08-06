@@ -51,6 +51,15 @@ RELATE CODES FOR MODERN SAMPLES
 
 5. DRAWING THE TREES
 
+/{relatepath}/relate_v1.1.9_x86_64_static/scripts/TreeView/TreeViewMutation.sh --haps ${hapsfile} --sample ${samplefile} --anc ${ancfile} --mut ${mutfile} --poplabels ${poplabels} --bp_of_interest ${bp_of_interestedsnp} --years_per_gen 28 -o ${outputfilename}
+
+
+FREQUENCY CALCULATION
+
+/{plinkpath}/plink2/plink2 --vcf ${input_vcf_file} --freq --out ${outputfilename}
+
+
+
 
 
 
