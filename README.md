@@ -23,7 +23,7 @@ RELATE CODES FOR ANCIENT SAMPLES
 
 5. EXTRACTING THE ANATOLIA AGE RESULTS
 
-/{relatepath}/relate_v1.1.9_x86_64_static/bin/RelateExtract  --mode SubTreesForSubpopulation --anc ${final_output_effpopsize}.anc --mut ${final_output_effpopsize}.mut --poplabels final_smaller1k_highcovancients_chr16.poplabels --pop_of_interest TUR -o ${TUR_outputfile}
+/{relatepath}/relate_v1.1.9_x86_64_static/bin/RelateExtract  --mode SubTreesForSubpopulation --anc ${final_output_effpopsize}.anc --mut ${final_output_effpopsize}.mut --poplabels ${poplabels} --pop_of_interest TUR -o ${TUR_outputfile}
 
 6. DRAWING THE TREES
 
@@ -34,7 +34,7 @@ RELATE CODES FOR MODERN SAMPLES
 
 1. VCF to HAPS/SAMPLE FILES
 
-/{relatepath}/relate_v1.1.9_x86_64_static/bin/RelateFileFormats --mode ConvertFromVcf --haps ${input}.haps --sample ${input}.sample -i ${vcffile}
+/{relatepath}/relate_v1.1.9_x86_64_static/bin/RelateFileFormats --mode ConvertFromVcf --haps ${output}.haps --sample ${output}.sample -i ${vcffile}
 
 2. RELATE PREPARATION STEPS
 
